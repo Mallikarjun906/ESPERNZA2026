@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import dev1 from "@/assets/dev1.jpg";
-import dev2 from "@/assets/dev2.jpg";
-import dev3 from "@/assets/dev3.jpg";
-import dev4 from "@/assets/dev4.jpg";
+import dev1 from "../assets/dev1.jpg";
+import dev2 from "../assets/dev2.jpeg";
+import dev3 from "../assets/dev3.jpeg";
+import dev4 from "../assets/dev4.jpeg";
 
 const developers = [
   { name: "Mallikarjun Badiger", img: dev1 },
