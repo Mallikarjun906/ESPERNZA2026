@@ -8,7 +8,7 @@ import dev4 from "../assets/dev4.jpeg";
 const developers = [
   { name: "Mallikarjun Badiger", img: dev1 },
   { name: "Prajwal Umarani", img: dev2 },
-  { name: "Akash Galgali", img: dev3 },
+  { name: "Akash Gargad", img: dev3 },
   { name: "Vikas Galgali", img: dev4 },
 ];
 
