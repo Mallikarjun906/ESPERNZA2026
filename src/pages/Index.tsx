@@ -160,12 +160,12 @@ const Index = () => {
       {/* ═══ STATS ═══ */}
       <Section3D id="stats">
         <div className="container mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 md:gap-6">
             {stats.map((stat, i) => (
-              <motion.div key={stat.label} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="glass-card p-6 text-center">
-                <stat.icon className="w-8 h-8 text-primary mx-auto mb-3" />
+              <motion.div key={stat.label} custom={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="glass-card p-4 sm:p-5 md:p-6 text-center">
+                <stat.icon className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-primary mx-auto mb-2 sm:mb-3" />
                 <Counter target={stat.target} suffix={stat.suffix} />
-                <div className="text-sm text-muted-foreground mt-1">{stat.label}</div>
+                <div className="text-xs sm:text-sm text-muted-foreground mt-1">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -392,7 +392,7 @@ const Index = () => {
               ))}
               <div className="glass-card p-6">
                 <div className="text-sm font-medium mb-3">Follow Us</div>
-                <div className="flex gap-3">
+                <div className="flex flex-wrap gap-2">
                   {["Twitter", "Discord", "GitHub", "LinkedIn"].map((s) => (
                     <span key={s} className="text-xs text-muted-foreground bg-muted/50 px-3 py-1.5 rounded-full hover:text-primary hover:bg-primary/10 transition-colors cursor-pointer">{s}</span>
                   ))}

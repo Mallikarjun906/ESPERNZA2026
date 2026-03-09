@@ -8,8 +8,8 @@ import dev4 from "../assets/dev4.jpeg";
 const developers = [
   { name: "Mallikarjun Badiger", img: dev1 },
   { name: "Prajwal Umarani", img: dev2 },
-  { name: "Akash Gargad", img: dev3 },
-  { name: "Vikas Galgali", img: dev4 },
+  { name: "Akash Gargad", img: dev4 },
+  { name: "Vikas Galgali", img: dev3 },
 ];
 
 const Footer = () => (
@@ -69,7 +69,7 @@ const Footer = () => (
         </div>
         <div>
           <h4 className="font-semibold mb-3 text-foreground">Connect</h4>
-          <div className="flex gap-3">
+          <div className="flex flex-wrap gap-3">
             {["Twitter", "Discord", "GitHub", "LinkedIn"].map((s) => (
               <span key={s} className="text-xs text-muted-foreground bg-muted/50 px-3 py-1.5 rounded-full hover:text-primary hover:bg-primary/10 transition-colors cursor-pointer">
                 {s}

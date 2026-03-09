@@ -93,7 +93,7 @@ const ContactPage = () => {
 
             <div className="glass-card p-6">
               <div className="text-sm font-medium mb-3">Follow Us</div>
-              <div className="flex gap-3">
+              <div className="flex flex-wrap gap-2">
                 {["Twitter", "Discord", "GitHub", "LinkedIn"].map((s) => (
                   <span key={s} className="text-xs text-muted-foreground bg-muted/50 px-3 py-1.5 rounded-full hover:text-primary hover:bg-primary/10 transition-colors cursor-pointer">
                     {s}
