@@ -63,10 +63,10 @@ const Section3D = ({ id, children }: { id: string; children: React.ReactNode }) 
 
 /* ── Data ── */
 const stats = [
-  // { icon: Calendar, label: "Events", target: 150, suffix: "+" },
-  // { icon: Users, label: "Participants", target: 12000, suffix: "+" },
-  // { icon: Trophy, label: "Winners", target: 800, suffix: "+" },
-  // { icon: Zap, label: "Prize Pool", target: 500, suffix: "K+" },
+  { icon: Calendar, label: "Events", target: 150, suffix: "+" },
+  { icon: Users, label: "Participants", target: 12000, suffix: "+" },
+  { icon: Trophy, label: "Winners", target: 800, suffix: "+" },
+  { icon: Zap, label: "Prize Pool", target: 500, suffix: "K+" },
 ];
 
 const events = [
