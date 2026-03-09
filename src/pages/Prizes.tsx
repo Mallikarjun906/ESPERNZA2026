@@ -5,7 +5,7 @@ const prizes = [
   {
     place: "1st",
     title: "Grand Champion",
-    amount: "$25,000",
+    // amount: "$25,000",
     icon: Trophy,
     perks: ["Cash Prize", "Internship Offers", "Mentorship Program", "Trophy & Certificate"],
     glowClass: "glow-accent",

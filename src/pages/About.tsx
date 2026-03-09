@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Target, Eye, Users } from "lucide-react";
 
 const team = [
-  { name: "Anika Sharma", role: "Founder & CEO" },
-  { name: "Marcus Lee", role: "CTO" },
-  { name: "Priya Desai", role: "Head of Events" },
-  { name: "Jordan Blake", role: "Design Lead" },
+  { name: "Prof.Shivanand Patil", role: "HOD" },
+  { name: "Prof.Anand Urabhi", role: "Event Co-Orinator" },
+  { name: "Prof.Akshatha", role: "Event Co-Orinator" },
+  { name: "Prof.Suma Kamgond", role: "Event Co-Orinator" },
 ];
 
 const AboutPage = () => (
