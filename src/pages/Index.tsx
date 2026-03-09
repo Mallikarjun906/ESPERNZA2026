@@ -70,7 +70,7 @@ const stats = [
 ];
 
 const events = [
-  { title: "HackVerse 2026", date: "Apr 15-17, 2026", location: "Virtual", tag: "Hackathon", desc: "Build innovative solutions in 48 hours with 500+ developers worldwide." },
+  { title: "HackVerse 2026", date: "Apr 15-17, 2026", location: "COLLEGE CAMPUS", tag: "Hackathon", desc: "Build innovative solutions in 48 hours with 500+ developers worldwide." },
   { title: "AI Summit", date: "May 8, 2026", location: "San Francisco", tag: "Conference", desc: "Explore cutting-edge AI research and network with industry leaders." },
   { title: "Code Arena Championship", date: "Jun 1, 2026", location: "Online", tag: "Competition", desc: "Test your algorithmic skills against the best competitive programmers." },
   { title: "Design Sprint Challenge", date: "Jun 20, 2026", location: "New York", tag: "Design", desc: "72-hour product design challenge with real-world problems." },
@@ -89,16 +89,16 @@ const tagColors: Record<string, string> = {
 };
 
 const prizes = [
-  { place: "1st", title: "Grand Champion", amount: "$25,000", perks: ["Cash Prize", "Internship Offers", "Mentorship Program", "Trophy & Certificate"] },
-  { place: "2nd", title: "First Runner-Up", amount: "$15,000", perks: ["Cash Prize", "Mentorship Access", "Certificate", "Swag Kit"] },
-  { place: "3rd", title: "Second Runner-Up", amount: "$10,000", perks: ["Cash Prize", "Certificate", "Swag Kit", "Community Access"] },
+  { place: "1st", title: "Grand Champion",  perks: [ "Internship Offers", "Mentorship Program", "Trophy & Certificate"] },
+  { place: "2nd", title: "First Runner-Up",  perks: [ "Mentorship Access", "Certificate", "Swag Kit"] },
+  { place: "3rd", title: "Second Runner-Up",  perks: [ "Certificate", "Swag Kit", "Community Access"] },
 ];
 
 const team = [
-  { name: "Anika Sharma", role: "Founder & CEO" },
-  { name: "Marcus Lee", role: "CTO" },
-  { name: "Priya Desai", role: "Head of Events" },
-  { name: "Jordan Blake", role: "Design Lead" },
+  { name: "Prof. Shivanand ", role: "Head Of Department" },
+  { name: "Prof.Anand Urabhi", role: "Event Coordinator" },
+  { name: "Prof.Suma Kamgond", role: "Event Coordinator" },
+  { name: "Prof.Akashatha ", role: "Event Coordinator" },
 ];
 
 const fadeUp = {
@@ -222,7 +222,7 @@ const Index = () => {
             <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }} className="glass-card p-8 text-center w-full md:w-72 order-2 md:order-1">
               <Medal className="w-12 h-12 text-secondary mx-auto mb-4" />
               <div className="text-sm text-muted-foreground mb-1">2nd Place</div>
-              <div className="text-3xl font-display font-bold gradient-text-secondary mb-2">$15,000</div>
+              <div className="text-3xl font-display font-bold gradient-text-secondary mb-2"></div>
               <h3 className="font-semibold mb-4">First Runner-Up</h3>
               <ul className="text-sm text-muted-foreground space-y-1.5">
                 {prizes[1].perks.map(p => <li key={p} className="flex items-center gap-2"><Star size={10} className="text-secondary" /> {p}</li>)}
@@ -233,7 +233,7 @@ const Index = () => {
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full text-xs font-bold bg-accent text-accent-foreground">GRAND PRIZE</div>
               <Trophy className="w-16 h-16 text-accent mx-auto mb-4 mt-4" />
               <div className="text-sm text-muted-foreground mb-1">1st Place</div>
-              <div className="text-4xl font-display font-bold gradient-text mb-2">$25,000</div>
+              <div className="text-4xl font-display font-bold gradient-text mb-2"></div>
               <h3 className="font-semibold mb-4">Grand Champion</h3>
               <ul className="text-sm text-muted-foreground space-y-1.5">
                 {prizes[0].perks.map(p => <li key={p} className="flex items-center gap-2"><Star size={10} className="text-accent" /> {p}</li>)}
@@ -243,21 +243,21 @@ const Index = () => {
             <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.3 }} className="glass-card p-8 text-center w-full md:w-72 order-3">
               <Award className="w-12 h-12 text-primary mx-auto mb-4" />
               <div className="text-sm text-muted-foreground mb-1">3rd Place</div>
-              <div className="text-3xl font-display font-bold gradient-text-secondary mb-2">$10,000</div>
+              <div className="text-3xl font-display font-bold gradient-text-secondary mb-2"></div>
               <h3 className="font-semibold mb-4">Second Runner-Up</h3>
               <ul className="text-sm text-muted-foreground space-y-1.5">
                 {prizes[2].perks.map(p => <li key={p} className="flex items-center gap-2"><Star size={10} className="text-primary" /> {p}</li>)}
               </ul>
             </motion.div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {[{ title: "Best Innovation", prize: "$5,000" }, { title: "Best Design", prize: "$3,000" }, { title: "People's Choice", prize: "$2,000" }].map((item) => (
               <div key={item.title} className="glass-card p-6 text-center">
                 <div className="text-sm text-muted-foreground mb-1">{item.title}</div>
                 <div className="text-xl font-display font-bold gradient-text">{item.prize}</div>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </Section3D>
 
@@ -404,7 +404,7 @@ const Index = () => {
       </Section3D>
 
       {/* ═══ SPONSORS ═══ */}
-      <section className="section-padding border-t border-border/50">
+      {/* <section className="section-padding border-t border-border/50">
         <div className="container mx-auto text-center">
           <p className="text-sm text-muted-foreground uppercase tracking-widest mb-8">Trusted by Leading Partners</p>
           <div className="flex flex-wrap justify-center gap-8 md:gap-16 opacity-40">
@@ -413,7 +413,7 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

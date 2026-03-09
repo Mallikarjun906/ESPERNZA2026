@@ -15,7 +15,7 @@ const prizes = [
   {
     place: "2nd",
     title: "First Runner-Up",
-    amount: "$15,000",
+    // amount: "$15,000",
     icon: Medal,
     perks: ["Cash Prize", "Mentorship Access", "Certificate", "Swag Kit"],
     glowClass: "glow-purple",
