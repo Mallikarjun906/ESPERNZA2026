@@ -78,7 +78,7 @@ const PrizesPage = () => (
           </div>
           <Trophy className="w-16 h-16 text-accent mx-auto mb-4 mt-4" />
           <div className="text-sm text-muted-foreground mb-1">1st Place</div>
-          <div className="text-4xl font-display font-bold gradient-text mb-2">$25,000</div>
+        
           <h3 className="font-semibold mb-4">Grand Champion</h3>
           <ul className="text-sm text-muted-foreground space-y-1.5">
             {prizes[0].perks.map(p => <li key={p} className="flex items-center gap-2"><Star size={10} className="text-accent" /> {p}</li>)}
@@ -95,7 +95,7 @@ const PrizesPage = () => (
         >
           <Award className="w-12 h-12 text-primary mx-auto mb-4" />
           <div className="text-sm text-muted-foreground mb-1">3rd Place</div>
-          <div className="text-3xl font-display font-bold gradient-text-secondary mb-2">$10,000</div>
+         
           <h3 className="font-semibold mb-4">Second Runner-Up</h3>
           <ul className="text-sm text-muted-foreground space-y-1.5">
             {prizes[2].perks.map(p => <li key={p} className="flex items-center gap-2"><Star size={10} className="text-primary" /> {p}</li>)}
@@ -117,7 +117,7 @@ const PrizesPage = () => (
         ].map((item) => (
           <div key={item.title} className="glass-card p-6 text-center">
             <div className="text-sm text-muted-foreground mb-1">{item.title}</div>
-            <div className="text-xl font-display font-bold gradient-text">{item.prize}</div>
+           
           </div>
         ))}
       </motion.div>
